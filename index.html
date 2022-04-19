@@ -37,7 +37,7 @@
                                 Truyện theo dõi
                             </a>
                         </li>
-                        <li class="nav-item" role="button">
+                        <li class="nav-item open__mess" role="button">
                             <a class="nav-item-link" type="button">
                                 <i class="fa fa-address-book"></i>
                                 Thể loại
@@ -142,12 +142,15 @@
                             </ul>
 
                             <script>
+                                
+
+
                                 $(function () {
                                     $('.dropdown').hide();
-                                    $('.nav-item').mousemove(function () {
+                                    $('.open__mess').mousemove(function () {
                                         $('.dropdown').show();
                                     });
-                                    $('.nav-item').mouseleave(function () {
+                                    $('.open__mess').mouseleave(function () {
                                         $('.dropdown').hide();
                                     });
                                 })
@@ -164,6 +167,10 @@
 
 
                     </ul>
+                    <form action="/tim-kiem.html" method="get" class="nav-search">
+                        <span class="nav-search-icon"><i class="fa fa-search"></i></span>
+                        <input type="text" name="q" class="nav-search-input" placeholder="Tìm kiếm...">
+                    </form>
                     <ul class="nav-list">
                         <li class="nav-item nav-item--strong" role="button">
                             <i class="fa-solid fa-right-to-bracket"></i>
@@ -176,14 +183,7 @@
 
                     </ul>
                 </nav>
-                <div class="nav-search">
-                    <form action="/tim-kiem.html" method="get" class="nav-search-form">
-                        <input type="text" name="q" class="nav-search-input" placeholder="Tìm kiếm...">
-                        <button type="submit" class="nav-search-submit">
-                            <i class="fa-solid fa-search"></i>
-                        </button>
-                    </form>
-                </div>
+                
             </div>
         </header>
         <main>
