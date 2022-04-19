@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/style/base.css">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
 
 </head>
 
@@ -20,189 +21,176 @@
     <div class="wed">
 
         <header class="header">
-            <div class="gird">
-                
-                <!-- <div class="nav__logo">
-                    <a href="index.html">
-                        <img src="./assets/images/logo.png" alt="logo" width="100px">
+            <div class="grid">
+
+                <div class="nav-logo">
+                    <a href="./">
+                        <img src="./assets/img/logo.png" alt="logo" width="80px">
                     </a>
-                </div> -->
-                
+                </div>
+
                 <nav class="nav-main">
-                        <ul class="nav-list">
-                            <li class="nav-item" role="button" style="background-color: #511c39;">
-                                <a href="/truyen-theo-doi.html?bookmark=1" class="nav-item-link">
-                                    <i class="fa-solid fa-list"></i>
-                                    Truyện theo dõi
-                                </a>
-    
-                            </li>
-                            <li class="nav-item" role="button">
-                                <a class="nav-item-link" drole="button">
-                                    <i class="fa fa-address-book"></i>
-                                    Thể loại
-                                    <b class="caret"></b>
-                                </a>
-                                <!-- <div class="dropdown">
-                                    <ul class="dropdown-list">
-                                        <li style="text-align: -wedkit-match-parent;">
-                                            <div class="dropdown-item">
-                                                <ul class="dropdown-item-menu">
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại manhua"
-                                                            href="/danh-sach-truyen-the-loai-manhua.html"
-                                                            target="_self">manhua</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại manhwa"
-                                                            href="/danh-sach-truyen-the-loai-manhwa.html"
-                                                            target="_self">manhwa</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại manga"
-                                                            href="/danh-sach-truyen-the-loai-manga.html"
-                                                            target="_self">manga</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại hệ thống"
-                                                            href="/danh-sach-truyen-the-loai-he-thong.html"
-                                                            target="_self">hệ thống</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại đô thị"
-                                                            href="/danh-sach-truyen-the-loai-do-thi.html" target="_self">đô
-                                                            thị</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại trọng sinh"
-                                                            href="/danh-sach-truyen-the-loai-trong-sinh.html"
-                                                            target="_self">trọng sinh</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại tu tiên"
-                                                            href="/danh-sach-truyen-the-loai-tu-tien.html" target="_self">tu
-                                                            tiên</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dropdown-item">
-                                                <ul class="dropdown-item-menu">
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại tu tiên"
-                                                            href="/danh-sach-truyen-the-loai-tu-tien.html" target="_self">tu
-                                                            tiên</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại harem"
-                                                            href="/danh-sach-truyen-the-loai-harem.html"
-                                                            target="_self">harem</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại xuyên không"
-                                                            href="/danh-sach-truyen-the-loai-xuyen-khong.html"
-                                                            target="_self">xuyên không</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại game"
-                                                            href="/danh-sach-truyen-the-loai-game.html"
-                                                            target="_self">game</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại ma đạo"
-                                                            href="/danh-sach-truyen-the-loai-ma-dao.html" target="_self">ma
-                                                            đạo</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại kinh dị"
-                                                            href="/danh-sach-truyen-the-loai-kinh-di.html"
-                                                            target="_self">kinh dị</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại đam mỹ"
-                                                            href="/danh-sach-truyen-the-loai-dam-my.html" target="_self">đam
-                                                            mỹ</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dropdown-item">
-                                                <ul class="dropdown-item-menu">
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại đam mỹ"
-                                                            href="/danh-sach-truyen-the-loai-dam-my.html" target="_self">đam
-                                                            mỹ</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại ngôn tình"
-                                                            href="/danh-sach-truyen-the-loai-ngon-tinh.html"
-                                                            target="_self">ngôn tình</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại đấu trí"
-                                                            href="/danh-sach-truyen-the-loai-dau-tri.html"
-                                                            target="_self">đấu trí</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại hentai"
-                                                            href="/danh-sach-truyen-the-loai-hentai.html"
-                                                            target="_self">hentai</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại hành động"
-                                                            href="/danh-sach-truyen-the-loai-hanh-dong.html"
-                                                            target="_self">hành động</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại phép thuật"
-                                                            href="/danh-sach-truyen-the-loai-phep-thuat.html"
-                                                            target="_self">phép thuật</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại huyền huyễn"
-                                                            href="/danh-sach-truyen-the-loai-huyen-huyen.html"
-                                                            target="_self">huyền huyễn</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dropdown-item">
-                                                <ul class="dropdown-item-menu">
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại huyền huyễn"
-                                                            href="/danh-sach-truyen-the-loai-huyen-huyen.html"
-                                                            target="_self">huyền huyễn</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại Action"
-                                                            href="/danh-sach-truyen-the-loai-action.html"
-                                                            target="_self">Action</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại lãng mạn"
-                                                            href="/danh-sach-truyen-the-loai-lang-man.html"
-                                                            target="_self">lãng mạn</a></li>
-                                                    <li class="dropdown-item-link"><a class="link"
-                                                            data-title="Thể loại hài hước"
-                                                            href="/danh-sach-truyen-the-loai-hai-huoc.html"
-                                                            target="_self">hài hước</a></li>
-                                                </ul>
-                                            </div>
-    
-                                        </li>
-                                    </ul> -->
-                                <!-- </div> -->
-    
-    
-                            </li>
-                            <li class="nav-item" role="button">
-                                <a href="/lich-su.html?bookmark=1" class="nav-item-link">
-                                    <i class="fa-solid fa-clock-rotate-left"></i>
-                                    Lịch sử
-                                </a>
-    
-                            </li>
-    
-    
-    
-                        </ul>
-                        <ul class="nav-list">
-                            <li class="nav-item nav-item--strong" role="button">
-                                <i class="fa-solid fa-right-to-bracket"></i>
-                                Đăng nhập
-                            </li>
-                            <li class="nav-item nav-item--strong" role="button">
-                                <i class="fa-solid fa-user"></i>
-                                Đăng kí
-                            </li>
-    
-                        </ul>
-                    </div>
-    
-    
+                    <ul class="nav-list">
+                        <li class="nav-item" role="button" style="background-color: #511c39;">
+                            <a href="/truyen-theo-doi.html?bookmark=1" class="nav-item-link">
+                                <i class="fa-solid fa-list"></i>
+                                Truyện theo dõi
+                            </a>
+                        </li>
+                        <li class="nav-item" role="button">
+                            <a class="nav-item-link" type="button">
+                                <i class="fa fa-address-book"></i>
+                                Thể loại
+                                <b class="caret"></b>
+                            </a>
+
+                            <ul class="dropdown megamenu">
+                                <li style="text-align: -wedkit-match-parent;">
+                                    <div class="dropdown-list">
+                                        <ul class="nav">
+                                            <li><a data-title="Thể loại manhua"
+                                                    href="/danh-sach-truyen-the-loai-manhua.html"
+                                                    target="_self">manhua</a></li>
+                                            <li><a data-title="Thể loại manhwa"
+                                                    href="/danh-sach-truyen-the-loai-manhwa.html"
+                                                    target="_self">manhwa</a></li>
+                                            <li><a data-title="Thể loại manga"
+                                                    href="/danh-sach-truyen-the-loai-manga.html"
+                                                    target="_self">manga</a></li>
+                                            <li><a data-title="Thể loại hệ thống"
+                                                    href="/danh-sach-truyen-the-loai-he-thong.html" target="_self">hệ
+                                                    thống</a></li>
+                                            <li><a data-title="Thể loại đô thị"
+                                                    href="/danh-sach-truyen-the-loai-do-thi.html" target="_self">đô
+                                                    thị</a></li>
+                                            <li><a data-title="Thể loại trọng sinh"
+                                                    href="/danh-sach-truyen-the-loai-trong-sinh.html"
+                                                    target="_self">trọng sinh</a></li>
+                                            <li><a data-title="Thể loại tu tiên"
+                                                    href="/danh-sach-truyen-the-loai-tu-tien.html" target="_self">tu
+                                                    tiên</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-list">
+                                        <ul class="nav">
+                                            <li><a data-title="Thể loại tu tiên"
+                                                    href="/danh-sach-truyen-the-loai-tu-tien.html" target="_self">tu
+                                                    tiên</a></li>
+                                            <li><a data-title="Thể loại harem"
+                                                    href="/danh-sach-truyen-the-loai-harem.html"
+                                                    target="_self">harem</a></li>
+                                            <li><a data-title="Thể loại xuyên không"
+                                                    href="/danh-sach-truyen-the-loai-xuyen-khong.html"
+                                                    target="_self">xuyên không</a></li>
+                                            <li><a data-title="Thể loại game"
+                                                    href="/danh-sach-truyen-the-loai-game.html" target="_self">game</a>
+                                            </li>
+                                            <li><a data-title="Thể loại ma đạo"
+                                                    href="/danh-sach-truyen-the-loai-ma-dao.html" target="_self">ma
+                                                    đạo</a></li>
+                                            <li><a data-title="Thể loại kinh dị"
+                                                    href="/danh-sach-truyen-the-loai-kinh-di.html" target="_self">kinh
+                                                    dị</a></li>
+                                            <li><a data-title="Thể loại đam mỹ"
+                                                    href="/danh-sach-truyen-the-loai-dam-my.html" target="_self">đam
+                                                    mỹ</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-list">
+                                        <ul class="nav">
+                                            <li><a data-title="Thể loại đam mỹ"
+                                                    href="/danh-sach-truyen-the-loai-dam-my.html" target="_self">đam
+                                                    mỹ</a></li>
+                                            <li><a data-title="Thể loại ngôn tình"
+                                                    href="/danh-sach-truyen-the-loai-ngon-tinh.html" target="_self">ngôn
+                                                    tình</a></li>
+                                            <li><a data-title="Thể loại đấu trí"
+                                                    href="/danh-sach-truyen-the-loai-dau-tri.html" target="_self">đấu
+                                                    trí</a></li>
+                                            <li><a data-title="Thể loại hentai"
+                                                    href="/danh-sach-truyen-the-loai-hentai.html"
+                                                    target="_self">hentai</a></li>
+                                            <li><a data-title="Thể loại hành động"
+                                                    href="/danh-sach-truyen-the-loai-hanh-dong.html" target="_self">hành
+                                                    động</a></li>
+                                            <li><a data-title="Thể loại phép thuật"
+                                                    href="/danh-sach-truyen-the-loai-phep-thuat.html"
+                                                    target="_self">phép thuật</a></li>
+                                            <li><a data-title="Thể loại huyền huyễn"
+                                                    href="/danh-sach-truyen-the-loai-huyen-huyen.html"
+                                                    target="_self">huyền huyễn</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-list">
+                                        <ul class="nav">
+                                            <li><a data-title="Thể loại huyền huyễn"
+                                                    href="/danh-sach-truyen-the-loai-huyen-huyen.html"
+                                                    target="_self">huyền huyễn</a></li>
+                                            <li><a data-title="Thể loại Action"
+                                                    href="/danh-sach-truyen-the-loai-action.html"
+                                                    target="_self">Action</a></li>
+                                            <li><a data-title="Thể loại lãng mạn"
+                                                    href="/danh-sach-truyen-the-loai-lang-man.html" target="_self">lãng
+                                                    mạn</a></li>
+                                            <li><a data-title="Thể loại hài hước"
+                                                    href="/danh-sach-truyen-the-loai-hai-huoc.html" target="_self">hài
+                                                    hước</a></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+                            <script>
+                                $(function () {
+                                    $('.dropdown').hide();
+                                    $('.nav-item').mousemove(function () {
+                                        $('.dropdown').show();
+                                    });
+                                    $('.nav-item').mouseleave(function () {
+                                        $('.dropdown').hide();
+                                    });
+                                })
+                            </script>
+                        </li>
+                        <li class="nav-item" role="button">
+                            <a href="/lich-su.html?bookmark=1" class="nav-item-link">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                Lịch sử
+                            </a>
+
+                        </li>
+
+
+
+                    </ul>
+                    <ul class="nav-list">
+                        <li class="nav-item nav-item--strong" role="button">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            Đăng nhập
+                        </li>
+                        <li class="nav-item nav-item--strong" role="button">
+                            <i class="fa-solid fa-user"></i>
+                            Đăng kí
+                        </li>
+
+                    </ul>
                 </nav>
-    
+                <div class="nav-search">
+                    <form action="/tim-kiem.html" method="get" class="nav-search-form">
+                        <input type="text" name="q" class="nav-search-input" placeholder="Tìm kiếm...">
+                        <button type="submit" class="nav-search-submit">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </header>
         <main>
-    
+
         </main>
         <footer>
-    
+
         </footer>
     </div>
 </body>
