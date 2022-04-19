@@ -140,21 +140,11 @@
 
                                 </li>
                             </ul>
-
-                            <script>
-                                
-
-
-                                $(function () {
-                                    $('.dropdown').hide();
-                                    $('.open__mess').mousemove(function () {
-                                        $('.dropdown').show();
-                                    });
-                                    $('.open__mess').mouseleave(function () {
-                                        $('.dropdown').hide();
-                                    });
-                                })
-                            </script>
+                            <style>
+                                .open__mess:hover .dropdown {
+                                    display: block;
+                                }
+                            </style>
                         </li>
                         <li class="nav-item" role="button">
                             <a href="/lich-su.html?bookmark=1" class="nav-item-link">
@@ -167,7 +157,23 @@
 
 
                     </ul>
+                    <form action="/tim-kiem.html" method="get" class="nav-search">
+                        <span class="nav-search-icon"><i class="fa fa-search"></i></span>
+                        <input type="text" name="q" class="nav-search-input" placeholder="Tìm kiếm...">
+                    </form>
                     <ul class="nav-list">
+                        <!-- <li class="nav-item user" role="button">
+                            <img src="./assets/img/user.png" alt="user" class="user-img">
+                            <span class="nav-user-name">Tạ Xuân Kiên</span> 
+
+                            <ul class="user-menu">
+                                <li><a href="/tai-khoan.html">Tài khoản</a></li>
+                                <li><a href="/doi-mat-khau.html">Đổi mật khẩu</a></li>
+                                <li><a href="/nap-tien.html">Nạp Tiền</a></li>
+                                <li><a href="/lich-su-tai-khoan.html">Lịch sử</a></li>
+                                <li><a href="/dang-xuat.html">Đăng xuất</a></li>
+                            </ul>
+                        </li> -->
                         <li class="nav-item nav-item--strong" role="button">
                             <i class="fa-solid fa-right-to-bracket"></i>
                             Đăng nhập
@@ -176,18 +182,125 @@
                             <i class="fa-solid fa-user"></i>
                             Đăng kí
                         </li>
-                        
+
                     </ul>
-                    <form action="/tim-kiem.html" method="get" class="nav-search">
-                        <span class="nav-search-icon"><i class="fa fa-search"></i></span>
-                        <input type="text" name="q" class="nav-search-input" placeholder="Tìm kiếm...">
-                    </form>
                 </nav>
-                
+                <div class="modal" style="display: none;">
+                    <div class="overlay">
+                    </div>
+                    <div class="body">
+                        <div class="inner">
+                            <div class="auth-form">
+                                <div class="auth-form__container">
+
+                                    <div class="auth-form__header">
+                                        <h3 class="auth-form__heading">Đăng ký</h3>
+                                        <span class="auth-form__switch-bth">Đăng nhập</span>
+                                    </div>
+
+                                    <div class="auth-form__from">
+                                        <div class="auth-form__group">
+                                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                                        </div>
+                                        <div class="auth-form__group">
+                                            <input type="password" class="auth-form__input"
+                                                placeholder="Mật khẩu của bạn">
+                                        </div>
+                                        <div class="auth-form__group">
+                                            <input type="password" class="auth-form__input"
+                                                placeholder="Nhập lại mật khẩu">
+                                        </div>
+                                    </div>
+
+                                    <div class="auth-form__aside">
+                                        <p class="auth-form__policy-text">
+                                            Bằng việc đăng ký, bạn đã đồng ý với F8-Shop về
+                                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                                        </p>
+                                    </div>
+
+                                    <div class="auth-form__controls">
+                                        <button class="bth auth-form__controls-back bth-nomal">TRỞ LẠI</button>
+                                        <button class="bth bth--primary">ĐĂNG KÝ</button>
+                                    </div>
+                                </div>
+
+                                <div class="auth-form__socials">
+                                    <a href="" class="auth-form__socials--facebook bth bth--size-s bth--with-icon">
+                                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                                        <span class="auth-form__socials-title">
+                                            Kết nối với Facebook
+                                        </span>
+                                    </a>
+                                    <a href="" class="auth-form__socials--google bth bth--size-s bth--with-icon">
+                                        <i class="auth-form__socials-icon fab fa-google"></i>
+                                        <span class="auth-form__socials-title">
+                                            Kết nối với Google
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- login form -->
+                            <div class="auth-form">
+                                <div class="auth-form__container">
+
+                                    <div class="auth-form__header">
+                                        <h3 class="auth-form__heading">Đăng Nhập</h3>
+                                        <span class="auth-form__switch-bth">Đăng Ký</span>
+                                    </div>
+
+                                    <div class="auth-form__from">
+                                        <div class="auth-form__group">
+                                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                                        </div>
+                                        <div class="auth-form__group">
+                                            <input type="password" class="auth-form__input"
+                                                placeholder="Mật khẩu của bạn">
+                                        </div>
+                                    </div>
+
+                                    <div class="auth-form__aside">
+                                        <div class="auth-form__help">
+                                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật
+                                                khẩu</a>
+                                            <span class="auth-form__help-separate"></span>
+                                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="auth-form__controls">
+                                        <button class="bth auth-form__controls-back bth-nomal">TRỞ LẠI</button>
+                                        <button class="bth bth--primary">ĐĂNG NHẬP</button>
+                                    </div>
+                                </div>
+
+                                <div class="auth-form__socials">
+                                    <a href="" class="auth-form__socials--facebook bth bth--size-s bth--with-icon">
+                                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                                        <span class="auth-form__socials-title" >
+                                            Kết nối với Facebook
+                                        </span>
+                                    </a>
+                                    <a href="" class="auth-form__socials--google bth bth--size-s bth--with-icon">
+                                        <i class="auth-form__socials-icon fab fa-google"></i>
+                                        <span class="auth-form__socials-title">
+                                            Kết nối với Google
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </header>
-        <main>
+        <main class="main">
+            <div class="container">
 
+            </div>
         </main>
         <footer>
 
