@@ -29,6 +29,10 @@
     margin-right: 0;
 }
 
+.nav-logo > a > img {
+    background-image: none;
+}
+
 .nav-list {
     list-style: none;
     padding-left: 0;
@@ -158,7 +162,7 @@
 }
 
 .nav-search {
-    position: relative;
+    position: block;
     margin-left: 0;
     margin-right: 0;
     white-space: nowrap;
@@ -173,7 +177,6 @@
 }
 
 .nav-search input.nav-search-input {
-    position: absolute;
     border: none;
     font-size: 10pt;
     float: left;
